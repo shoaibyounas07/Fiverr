@@ -1,0 +1,114 @@
+/* CSS for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    color: #005EFF;
+    margin: 20px 0;
+}
+
+.main {
+    padding: 10px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.info-window {
+    width: 30%; /* Adjusted width for inline blocks */
+    box-sizing: border-box;
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(120, 89, 207, 0.3);
+    border: 2px solid #005EFF;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.info-window h3 {
+    margin: 0 0 10px 0;
+    color: #005EFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info-window p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.info-window:hover {
+    background-color: #f0f0f0;
+}
+
+.info-window.active {
+    background: #005EFF;
+    color: white;
+    border-color: #0044cc;
+}
+
+.info-window.active h3 {
+    color: white;
+}
+
+.info-window.active p {
+    color: white;
+}
+
+.map-container {
+    text-align: center;
+}
+
+#map {
+    height: 300px;
+    width: 60%;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 2px solid hsl(218, 100%, 50%);
+    /* left : 150px */
+    margin: 10px auto; /* Center horizontally */
+}
+
+.leaflet-control-geosearch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.leaflet-control-geosearch input {
+    border-radius: 12px;
+    height: 35px;
+    width: calc(100% - 50px);
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+.leaflet-control-geosearch button {
+    border-radius: 12px;
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    padding: 0;
+    margin-left: -5px;
+}
